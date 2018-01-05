@@ -1,0 +1,166 @@
+
+.paginator {
+  border: 0 !important;
+  background-color: transparent !important;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  top: 25%;
+  background-color: #fff;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+
+  .paginator-item, .paginator-control {
+    position: relative;
+    margin: 10px;
+  }
+  .paginator-control a {
+    display: block;
+    text-decoration: none;
+  }
+  .paginator-control .paginator-control-up .icon-arrow-up {
+    /* background-color: #212121;
+     border: 3px solid #212121;*/
+    position: relative;
+  }
+  .paginator-control .icon {
+    color: #212121;
+  }
+  .paginator-item {
+    transition: all .3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+  }
+  .paginator-item .paginator-item-link.paginator-complete {
+    background-color: #080808;
+  }
+  .paginator-item .paginator-item-link {
+    background-color: #212121;
+    border: 3px solid #212121;
+    position: relative;
+  }
+  .paginator-item .paginator-complete {
+    background: #000;
+  }
+  .paginator-item-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #212121;
+  }
+
+  .paginator-item .paginator-item-title {
+    top: 1px !important;
+  }
+  .paginator-item-title {
+    position: absolute;
+    opacity: 0;
+    width: 240px;
+    overflow: hidden;
+    left: -34px;
+    top: -5px;
+  }
+  .paginator-item .paginator-item-title .paginator-item-title-inner {
+    background-color: #212121;
+    border-radius: 0;
+    padding: 2px 8px 3px 16px;
+    color: #fff;
+  }
+  .paginator-item-title-inner {
+    padding: 4px 8px;
+    background-color: #666;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+  }
+}
+ul {
+  list-style: none !important;
+  justify-content: center;
+}
+#menu {
+    position: fixed;
+    right: 80px;
+    top: 50%;
+    margin-top: -50%;
+    z-index: 1;
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#menu li a div.bloc {
+    position: absolute;
+    right: 23px;
+    background-color: #3E3E3E;
+    height: 51px;
+    width: 6px;
+}
+
+#menu li.current a div.bloc {
+    right: 20px;
+    background-color: #FFF;
+    width: 12px;
+}
+
+#menu li a {
+    position: relative;
+    display: block;
+    width: 106px;
+    height: 58px;
+    margin: 3px;
+    text-decoration: none;
+    text-align: right;
+}
+
+#menu li span {
+    position: absolute;
+    background-color: #3E3E3E;
+    color: #fff;
+    border-radius: 3px 0 0 3px;
+    padding: 6px 5px 4px 8px;
+    height: 9px;
+    right: 35px;
+    top: 15px;
+}
+
+#menu li img {
+    position: absolute;
+    right: 27px;
+    top: 15px;
+}
+
+#menu li .menutxt {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    width: 120px;
+    height: 69px;
+    z-index: 1;
+}
+
+#menu li.current .menutxt {
+    opacity: 1;
+    right: 10px;
+}
+
+#menu li.fb {
+    background-image: url(img/menu-blog.png);
+    background-repeat: no-repeat;
+    background-position: 61px 0;
+    height: 45px;
+}
+
+#menu li.fb:hover {
+    background-position: 61px -45px;
+}
+
+#menu li.fb span {
+    right: 8px;
+    top: 25px;
+    background: none;
+}

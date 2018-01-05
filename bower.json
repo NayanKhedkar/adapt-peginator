@@ -1,0 +1,16 @@
+{
+  "name": "adapt-paginator",
+  "version": "2.0.0",
+  "framework": "^2.0.0",
+  "homepage": "",
+  "issues": "",
+  "displayName" : "Paginator",
+  "extention" : "paginator",
+  "description": "A paginator Extention",
+  "main": "/js/adapt-paginator.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

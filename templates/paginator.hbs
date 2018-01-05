@@ -1,0 +1,35 @@
+<div class="paginator-inner">
+	<div class="paginator-control">
+		<a href="#" class="paginator-control-up">
+			<span class="icon icon-arrow-up"></span>
+		</a>
+	</div>
+	 {{#each _items}}
+	   <div data-itemid="{{inc @index}}" class="paginator-item">
+			<a href="#" class="paginator-item-link paginator-complete" id="paginator-{{inc @index}}" data-index="{{inc @index}}">
+			</a>
+			<span class="paginator-item-title display-none" style="opacity: 0; left: 34px;">
+				<span class="paginator-item-title-inner">{{{title}}}</span>
+			</span>
+	   </div>
+	 {{/each}}
+    {{!--<ul id="menu">
+        {{#each _items}}
+                <li class="">
+                    <a href="#">
+                        <div class="menutxt" style="opacity: 0; right: 9px;">
+                            <span>{{{title}}}</span>
+                            <img src="http://www.teapot-creation.com/wp-content/themes/teapot/img/menu-arrow.png" alt="">
+                        </div>
+                        <div class="bloc" style="background-color: rgb(62, 62, 62); width: 6px; right: 23px; overflow: hidden;">
+                        </div>
+                    </a>
+                </li>
+        {{/each}}
+    </ul>--}}
+	<div class="paginator-control">
+		<a href="#" class="paginator-control-down">
+			<span class="icon icon-arrow-down"></span>
+		</a>
+	</div>
+</div>
